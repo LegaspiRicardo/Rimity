@@ -155,11 +155,32 @@ function App() {
 
 
 
+
+        {/*------------------ Montañitas medio fondo --------------*/}
+        <ParallaxLayer
+          offset={2.05}
+          speed={0.01}
+          factor={1.9}
+          style={{
+            backgroundImage: `	url(${montanaMedioFondo2})`,
+            backgroundSize: 'contain',
+            width: '90%',
+            margin: '0 auto 0 0'
+          }}
+        >
+        </ParallaxLayer>
+
+
+
+
+
+
+
         {/*------------------ Montañas medio fondo derecha--------------*/}
         <ParallaxLayer
           offset={1.4}
           speed={0.3}
-          factor={1.5}
+          factor={1.9}
           style={{
             backgroundImage: `	url(${montanaMedio2})`,
             backgroundSize: 'cover',
@@ -189,13 +210,24 @@ function App() {
 
 
 
-
+        {/*-------  ----------- Montañas medio fondo --------------*/}
+        <ParallaxLayer
+            offset={2.3}
+            speed={0.2}
+            factor={2}
+            style={{
+              backgroundImage: `	url(${montanaFondo})`,
+              backgroundSize: 'contain',
+              marginLeft: 'auto',
+            }}
+          >
+        </ParallaxLayer>
 
 
         {/*-------  ----------- Montañas medio fondo --------------*/}
         <ParallaxLayer
-          offset={2}
-          speed={0.03}
+          offset={2.2}
+          speed={0.3}
           factor={.8}
           style={{
             backgroundImage: `	url(${montanaFondo})`,
@@ -203,35 +235,10 @@ function App() {
           }}
         >
         </ParallaxLayer>
-        {/*-------  ----------- Montañas medio fondo --------------*/}
-        <ParallaxLayer
-          offset={2.3}
-          speed={0.2}
-          factor={2}
-          style={{
-            backgroundImage: `	url(${montanaFondo})`,
-            backgroundSize: 'contain',
-          }}
-        >
-        </ParallaxLayer>
 
 
 
 
-
-
-        {/*-------  ----------- Montañas medio fondo --------------*/}
-        <ParallaxLayer
-          offset={1.8}
-          speed={0.03}
-          factor={1.4}
-          style={{
-            backgroundImage: `	url(${montanaMedio1})`,
-            backgroundSize: 'cover',
-            alignContent: 'center'
-          }}
-        >
-        </ParallaxLayer>
 
 
 
@@ -241,9 +248,9 @@ function App() {
 
         {/*------------------ Peñasco Izquierdo --------------*/}
         <ParallaxLayer
-          offset={1.9}
+          offset={1.7}
           speed={0.7}
-          factor={2}
+          factor={1.85}
           style={{
             backgroundImage: `	url(${peñascoIzq})`,
             backgroundSize: 'cover',
@@ -254,9 +261,9 @@ function App() {
         </ParallaxLayer>
         {/* ------------------ Peñasco Derecho -------------- */}
         <ParallaxLayer
-          offset={1.89}
+          offset={1.7}
           speed={1}
-          factor={2.3}
+          factor={2}
           style={{
             backgroundImage: `	url(${peñascoDer})`,
             backgroundSize: 'cover',
@@ -292,7 +299,7 @@ function App() {
 
         {/*------------------ Segunda Seccion--------------*/}
         <ParallaxLayer
-          offset={2.8}
+          offset={2.7}
           speed={0.07}
           factor={4}
         >
