@@ -33,7 +33,19 @@
   
 }
 
+.titulillo{
+  font-size: 80px;
+  z-index: 60;
+  color: black;
+}
 
+.pruebaa{
+
+  display: block;
+  position:absolute;
+top: 1000px;
+height: 500px;
+ }
 
 
 .App-logo {
@@ -82,18 +94,109 @@
 h2{
   text-align: center;
   color: white;
-  font-size: 50px ;
+  font-size: 80px ;
 }
 
 
 
 .contenidoParalax{
-  background: linear-gradient(180deg, rgb(124, 61, 32) 0%, rgb(109, 14, 14) 29%, rgb(66, 20, 97) 100%);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(14, 36, 68) 29%, rgb(10, 27, 53) 100%);
 }
 
-.prueba{
+.alerta{
+
 filter: blur(5%);
 }
+
+.carta_Intro{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 10%, rgb(22, 56, 107, 0.8) 29%, rgb(10, 27, 53, 0.8) 100%);
+  padding: 2% 0 3% 0;
+  margin: 0 2%;
+  border-radius: 50px;
+}
+
+.tituloCartaIntro{
+  border-bottom: rgba(255, 255, 255, 0.395) solid;
+}
+
+
+.textoCartaIntro{
+  font-size:20px;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 1.5  ;
+}
+
+
+
+
+
+
+
+.card {
+  width: 600px;
+  min-height: 350px;
+  position: relative;
+  background: linear-gradient(135deg, rgb(28, 28, 28), rgb(28, 28, 28));
+  padding: 2.5em 3em;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0 0 0 / .24);
+  backdrop-filter: blur(2px); 
+  
+  &::before {
+    position: absolute;
+    content: 'cover';
+    inset: 0;
+    z-index: -1;
+    border-radius: 30px;
+    background-image: url(C:\xampp\htdocs\rimiti\rimity\src\azul\escena1.png);
+    background-size: adjust;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    border: solid white;
+  }
+  
+  .title {
+    font-size: 2rem;
+    line-height: 1.2;
+    
+    color: white;
+  }
+  
+  .text {
+    font-size: 1.1rem;
+    margin-top: 1em;
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   .bg {
@@ -158,7 +261,7 @@ filter: blur(5%);
     perspective: 600px;
     -webkit-perspective: 600px;
     z-index: -1;
-    background: linear-gradient(180deg, rgb(124, 61, 32) 0%, rgb(109, 14, 14) 29%, rgb(66, 20, 97) 100%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(16, 32, 99) 100%, rgb(42, 14, 68) 29%);
 }
 .star-field .layer {
     box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc, -91px -235px #d4d4d4, 491px -460px #f7f7f7, 892px -128px #f7f7f7, 758px -277px #ededed, 596px 378px #cccccc, 647px 423px whitesmoke, 183px 389px #c7c7c7,

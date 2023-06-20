@@ -6,19 +6,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-import montana from './rojo/montañass.png';
+import montana from './azul/montañass.png';
 
-import montanaFondo from './rojo/montañasFondo.png';
-import montanaFondo1 from './rojo/montañasFondo1.png';
-import montanaFondo2 from './rojo/montañasFondo2.png';
+import montanaFondo from './azul/montañasFondo.png';
 
-import peñascoIzq from './rojo/peñascoIzquierdo1.png';
-import peñascoDer from './rojo/peñascoDerecho1.png';
+import montanaMedioFondo1 from './azul/montañasMedioFondo1.png';
+import montanaMedioFondo1_1 from './azul/montañasMedioFondo1_1.png';
+import montanaMedioFondo2 from './azul/montañasMedioFondo2.png';
 
-import montanaMedio1 from './rojo/montañasMedio1.png';
-import montanaMedio2 from './rojo/montañasMedio2.png';
-import montanaMedio3 from './rojo/montañasMedio3.png';
+import peñascoIzq from './azul/peñascoIzquierdo1.png';
+import peñascoDer from './azul/peñascoDerecho1.png';
 
+import montanaMedio1 from './azul/montañasMedio1.png';
+import montanaMedio2 from './azul/montañasMedio2.png';
+import montanaMedio3 from './azul/montañasMedio3.png';
+
+import Prueba from './components/Prueba';
 
 
 function App() {
@@ -26,7 +29,8 @@ function App() {
 
 
     <div>
-      
+
+
 
 
       {/* <div class="container">
@@ -46,12 +50,12 @@ function App() {
 
 
 
-      <Parallax pages={3.1}  class='contenidoParalax' >
+      <Parallax pages={3.1} class='contenidoParalax' >
         {/*------------------ ESTRELLAS --------------*/}
-        <ParallaxLayer 
-          offset={0} 
+        <ParallaxLayer
+          offset={0}
           speed={0.001}
-          >
+        >
           <div class="bg">
             <div class="star-field">
               <div class="layer"></div>
@@ -60,87 +64,137 @@ function App() {
             </div>
           </div>
         </ParallaxLayer>
-        {/*------------------ Montañas pequeñas fondo --------------*/}
-        <ParallaxLayer 
-          offset={1.5} 
-          speed={0.3 }
+        {/*------------------ Montañas fondo --------------*/}
+        <ParallaxLayer
+          offset={1.3}
+          speed={0.3}
           factor={0.7}
           style={{
-            backgroundImage: `	url(${montanaFondo2})`,
+            backgroundImage: `	url(${montanaFondo})`,
             backgroundSize: 'contain',
             margin: '0 auto'
           }}
-        >          
-        </ParallaxLayer>
-        {/*------------------ Montañas principales --------------*/}
-        <ParallaxLayer 
-            offset={0.5} 
-            speed={-0.01}
-            factor={1.3}
-            style={{
-              backgroundImage:	`	url(${montana})`,
-              backgroundSize: 'cover',
-          }} >
-            
-        <h2>Descubre un mundo nuevo</h2>
+        >
         </ParallaxLayer>
 
+
+        {/*------------------ Titulo --------------*/}
+        <ParallaxLayer
+          offset={0.2}
+          speed={-1.5}
+          factor={0.7}
+        >
+          <h2 style={{
+            fontSize: '80px',
+          }}>Descubre un mundo nuevo</h2>
+        </ParallaxLayer>
+
+        {/*------------------ Montañas principales --------------*/}
+        <ParallaxLayer
+          offset={0.5}
+          speed={-0.01}
+          factor={1.4}
+          style={{
+            backgroundImage: `	url(${montana})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'repeat',
+          }} >
+        </ParallaxLayer>
+
+
+
+
         {/*------------------ Montañas pequeñas medio-fondo --------------*/}
-        <ParallaxLayer 
-          offset={1.5} 
-          speed={0.01 }
+        <ParallaxLayer
+          offset={1.4}
+          speed={0.1}
           factor={0.7}
           style={{
-            backgroundImage: `	url(${montanaFondo1})`,
+            backgroundImage: `	url(${montanaMedioFondo1})`,
             backgroundSize: 'contain',
-            
+
             width: '90%',
             margin: '0 auto 0 0',
           }}
         >
         </ParallaxLayer>
+
+
+        {/*------------------ Montañas pequeñas medio-fondo --------------*/}
+        <ParallaxLayer
+          offset={1.82}
+          speed={0.3}
+          factor={3}
+          style={{
+            backgroundImage: `	url(${montanaMedioFondo1_1})`,
+            backgroundSize: 'contain',
+
+            width: '70%',
+            margin: '0 auto',
+          }}
+        >
+        </ParallaxLayer>
+
+
+
+
+        {/*------------------ Montañitas medio fondo --------------*/}
+        <ParallaxLayer
+          offset={1.99}
+          speed={0.01}
+          factor={1}
+          style={{
+            backgroundImage: `	url(${montanaMedioFondo2})`,
+            backgroundSize: 'contain',
+            width: '60%',
+            margin: '0 auto'
+          }}
+        >
+        </ParallaxLayer>
+
+
+
+
         {/*------------------ Montañas medio fondo derecha--------------*/}
-        <ParallaxLayer 
-          offset={1.4} 
+        <ParallaxLayer
+          offset={1.4}
           speed={0.3}
           factor={1.5}
           style={{
             backgroundImage: `	url(${montanaMedio2})`,
             backgroundSize: 'cover',
-            width:'50%',
-            marginLeft:'auto'
+            width: '50%',
+            marginLeft: 'auto'
           }}
         >
         </ParallaxLayer>
+
+
         {/*------------------ Montañas medio fondo izquierda--------------*/}
-        <ParallaxLayer 
-          offset={1.8} 
+        <ParallaxLayer
+          offset={1.6}
           speed={0.5}
-          factor={1.2}
+          factor={1.5}
           style={{
             backgroundImage: `	url(${montanaMedio3})`,
             backgroundSize: 'cover',
-            width:'40%',
-            marginright:'auto'
+            width: '40%',
+            marginright: 'auto'
           }}
         >
         </ParallaxLayer>
-        {/*------------------ Montañitas medio fondo --------------*/}
-        <ParallaxLayer 
-          offset={2.8} 
-          speed={0.5}
-          factor={1}
-          style={{
-            backgroundImage: `	url(${montanaFondo})`,
-            backgroundSize: 'contain',
-            width:'80%',
-            margin:'0 auto'
-          }}
-        >
-        </ParallaxLayer>
+
+
+
+
+
+
+
+
+
         {/*-------  ----------- Montañas medio fondo --------------*/}
-        <ParallaxLayer 
-          offset={2} 
+        <ParallaxLayer
+          offset={2}
           speed={0.03}
           factor={.8}
           style={{
@@ -150,67 +204,101 @@ function App() {
         >
         </ParallaxLayer>
         {/*-------  ----------- Montañas medio fondo --------------*/}
-        <ParallaxLayer 
-          offset={1.8} 
+        <ParallaxLayer
+          offset={1.8}
           speed={0.03}
           factor={1.4}
           style={{
             backgroundImage: `	url(${montanaMedio1})`,
             backgroundSize: 'cover',
-            alignContent:'center'
+            alignContent: 'center'
           }}
         >
         </ParallaxLayer>
+
+
+
 
 
 
 
         {/*------------------ Peñasco Izquierdo --------------*/}
-        <ParallaxLayer 
-          offset={1.9} 
+        <ParallaxLayer
+          offset={1.9}
           speed={0.7}
           factor={2}
           style={{
-              backgroundImage: `	url(${peñascoIzq})`,
-              backgroundSize: 'cover',
-              width: '65%',
-              marginright:'auto',
-              }}
+            backgroundImage: `	url(${peñascoIzq})`,
+            backgroundSize: 'cover',
+            width: '65%',
+            marginright: 'auto',
+          }}
         >
         </ParallaxLayer>
         {/* ------------------ Peñasco Derecho -------------- */}
-        <ParallaxLayer 
-          offset={1.9} 
-          speed={1.2}
-          factor={1.8}
+        <ParallaxLayer
+          offset={1.89}
+          speed={1}
+          factor={2.3}
           style={{
             backgroundImage: `	url(${peñascoDer})`,
             backgroundSize: 'cover',
             width: '65%',
-            marginLeft:'auto',
+            marginLeft: 'auto',
           }}
         >
 
 
         </ParallaxLayer>
+
+
+
+        {/*------------------ Texto prueba--------------*/}
+        <ParallaxLayer
+          offset={1.99}
+          speed={0.05}
+          factor={0.7}
+        >
+          {/* <div class="container col-5 mx-auto carta_Intro">
+            <h3 className='col-md-10 mx-auto mb-4 tituloCartaIntro'>HTML and Bootstrap Section</h3>
+            <div className="row ">
+              <div className="col-md-10 mx-auto">
+                <div>
+                  <p className='textoCartaIntro'>
+                  Texto de relleno para generar muchos caracteres en este espacio de carta para hacer incluso una mini introducción como de istoria hacia la isstoriaThis is a Bootstrap alert in the additional section.
+                  Texto de relleno para generar muchos caracteres en este espacio de carta para hacer incluso una mini introducción como de istoria hacia la isstoriaThis is a Bootstrap alert in the additional section.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> */}
+
+
+
+          <div class="card" >
+            <h1 class="title">Strange but true – there are 12 times more trees on Earth than stars in the Milky Way!</h1>
+            <p class="text">Scientists estimate there are between 200 – 400 billion stars in our galaxy while there are an estimated 1 trillion trees on Earth! Like the stars, trees live a long time and are truly important for life. Check out a related blog you might like .</p>
+          </div>
+
+
+
+        </ParallaxLayer>
+
+
       </Parallax>
 
-        
 
 
 
 
-      
     </div>
 
 
 
 
-    
-
-
-
   );
+
+
 }
 
 export default App;
