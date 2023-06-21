@@ -21,6 +21,10 @@ import montanaMedio1 from './assets/images/azul/montañasMedio1.png';
 import montanaMedio2 from './assets/images/azul/montañasMedio2.png';
 import montanaMedio3 from './assets/images/azul/montañasMedio3.png';
 
+
+import saturno from './assets/images/general/saturno.jpg'
+
+
 //import Prueba from './components/Prueba';
 
 
@@ -50,7 +54,7 @@ function App() {
 
 
 
-      <Parallax pages={4.1} class='contenidoParalax' >
+      <Parallax pages={3.8} class='contenidoParalax' >
         {/*------------------ ESTRELLAS --------------*/}
         <ParallaxLayer
           offset={0}
@@ -86,6 +90,7 @@ function App() {
         >
           <h2 style={{
             fontSize: '80px',
+            color: 'white'
           }}>Descubre un mundo nuevo</h2>
         </ParallaxLayer>
 
@@ -155,32 +160,11 @@ function App() {
 
 
 
-
-        {/*------------------ Montañitas medio fondo --------------*/}
-        <ParallaxLayer
-          offset={2.05}
-          speed={0.01}
-          factor={1.9}
-          style={{
-            backgroundImage: `	url(${montanaMedioFondo2})`,
-            backgroundSize: 'contain',
-            width: '90%',
-            margin: '0 auto 0 0'
-          }}
-        >
-        </ParallaxLayer>
-
-
-
-
-
-
-
         {/*------------------ Montañas medio fondo derecha--------------*/}
         <ParallaxLayer
           offset={1.4}
           speed={0.3}
-          factor={1.9}
+          factor={1.5}
           style={{
             backgroundImage: `	url(${montanaMedio2})`,
             backgroundSize: 'cover',
@@ -210,25 +194,25 @@ function App() {
 
 
 
-        {/*-------  ----------- Montañas medio fondo --------------*/}
-        <ParallaxLayer
-            offset={2.3}
-            speed={0.2}
-            factor={2}
-            style={{
-              backgroundImage: `	url(${montanaFondo})`,
-              backgroundSize: 'contain',
-              marginLeft: 'auto',
-            }}
-          >
-        </ParallaxLayer>
+
 
 
         {/*-------  ----------- Montañas medio fondo --------------*/}
         <ParallaxLayer
-          offset={2.2}
-          speed={0.3}
+          offset={2}
+          speed={0.03}
           factor={.8}
+          style={{
+            backgroundImage: `	url(${montanaFondo})`,
+            backgroundSize: 'contain',
+          }}
+        >
+        </ParallaxLayer>
+        {/*-------  ----------- Montañas medio fondo --------------*/}
+        <ParallaxLayer
+          offset={2.3}
+          speed={0.2}
+          factor={2}
           style={{
             backgroundImage: `	url(${montanaFondo})`,
             backgroundSize: 'contain',
@@ -241,6 +225,20 @@ function App() {
 
 
 
+        {/*-------  ----------- Montañas medio fondo --------------*/}
+        <ParallaxLayer
+          offset={1.8}
+          speed={0.03}
+          factor={1.4}
+          style={{
+            backgroundImage: `	url(${montanaMedio1})`,
+            backgroundSize: 'cover',
+            alignContent: 'center'
+          }}
+        >
+        </ParallaxLayer>
+
+
 
 
 
@@ -248,9 +246,9 @@ function App() {
 
         {/*------------------ Peñasco Izquierdo --------------*/}
         <ParallaxLayer
-          offset={1.7}
+          offset={1.9}
           speed={0.7}
-          factor={1.85}
+          factor={2}
           style={{
             backgroundImage: `	url(${peñascoIzq})`,
             backgroundSize: 'cover',
@@ -261,9 +259,9 @@ function App() {
         </ParallaxLayer>
         {/* ------------------ Peñasco Derecho -------------- */}
         <ParallaxLayer
-          offset={1.7}
+          offset={1.89}
           speed={1}
-          factor={2}
+          factor={2.3}
           style={{
             backgroundImage: `	url(${peñascoDer})`,
             backgroundSize: 'cover',
@@ -299,7 +297,7 @@ function App() {
 
         {/*------------------ Segunda Seccion--------------*/}
         <ParallaxLayer
-          offset={2.7}
+          offset={2.8}
           speed={0.07}
           factor={4}
         >
@@ -315,16 +313,16 @@ function App() {
           <div className='row'>
             <div className='col-6'>
 
-            <h1 class="row col-10 mx-auto">Strange but true – there are 12 times more trees on Earth than stars in the Milky Way!</h1>
-            <p class="col-10 mx-auto">Scientists estimate there are between 200 – 400 billion stars in our galaxy while there are an estimated 1 trillion trees on Earth! Like the stars, trees live a long time and are truly important for life. Check out a related blog you might like .</p>
+              <h1 class="row col-10 mx-auto">Strange but true – there are 12 times more trees on Earth than stars in the Milky Way!</h1>
+              <p class="col-10 mx-auto">Scientists estimate there are between 200 – 400 billion stars in our galaxy while there are an estimated 1 trillion trees on Earth! Like the stars, trees live a long time and are truly important for life. Check out a related blog you might like .</p>
 
 
             </div>
 
             <div className='col-6'>
 
-            <h1 class="row col-10 mx-auto">Strange but true – there are 12 times more trees on Earth than stars in the Milky Way!</h1>
-            <p class="col-10 mx-auto">Scientists estimate there are between 200 – 400 billion stars in our galaxy while there are an estimated 1 trillion trees on Earth! Like the stars, trees live a long time and are truly important for life. Check out a related blog you might like .</p>
+              <h1 class="row col-10 mx-auto">Strange but true – there are 12 times more trees on Earth than stars in the Milky Way!</h1>
+              <p class="col-10 mx-auto">Scientists estimate there are between 200 – 400 billion stars in our galaxy while there are an estimated 1 trillion trees on Earth! Like the stars, trees live a long time and are truly important for life. Check out a related blog you might like .</p>
 
 
             </div>
@@ -337,7 +335,27 @@ function App() {
       </Parallax>
 
 
+      <div class='contenidoSecciondos'>
+        <div class="container">
+          <div class="row col-6 mx-auto">
+            <div class="col-6">
+              <h3 class="mb-3">Carousel cards title </h3>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-block w-100" src="..." alt="First slide" style={{backgroundImage: `	url(${saturno})`,}}></div>
+                </div>
+                <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
 
 
     </div>
